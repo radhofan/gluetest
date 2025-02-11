@@ -59,9 +59,10 @@ mamba init
 source ~/.bashrc
 mamba activate gluetest
 ```
-Install pytest in order for the python test to work
+Install pytest and hamcrest in order for the python test to work
 ```bash
 mamba install pytest
+mamba install hamcrest
 ```
 All commands for running tests can be found in the `run.sh` file in the root directory, and can be run with:
 ```bash
@@ -82,7 +83,7 @@ mvn -f commons-csv/pom.xml test -Drat.skip
 
 ### Running the translated Python Tests
 
-In order to run the python tests, `pytest` is needed and can be installed with the following command:
+In order to run the python tests, `pytest` and is needed and can be installed with the following command:
 ```bash
 python -m pip install pytest
 ```
