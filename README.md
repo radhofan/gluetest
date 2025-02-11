@@ -48,10 +48,20 @@ gu install python
 ```
 
 ## Running Tests
-Install maven and pytest first to run all tests
+Install maven in order for the java test to work
 ```bash
 sdk install maven
-pip install pytest
+```
+Install cpython 3.11.4 to use the pytest for the project, use conda with mamba here to make things easier and use less space
+```bash
+mamba create --name gluetest python=3.11.4
+mamba init
+source ~/.bashrc
+mamba activate gluetest
+```
+Install pytest in order for the python test to work
+```bash
+mamba install pytest
 ```
 All commands for running tests can be found in the `run.sh` file in the root directory, and can be run with:
 ```bash
