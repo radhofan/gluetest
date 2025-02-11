@@ -17,7 +17,7 @@ Deactivate default conda trovi environment
 ```bash
 conda deactivate
 ```
-Move to work folder inside Chameleon Trovi and update apt and install zip afterwards
+Move to `work/[current_session]` folder inside Chameleon Trovi and update apt and install zip afterwards
 ```bash
 sudo apt update
 sudp apt install zip
