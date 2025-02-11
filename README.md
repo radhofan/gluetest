@@ -25,11 +25,6 @@ sudp apt install zip
 
 ## Setting up GraalVM and GraalPython
 
-## NOTE: THIS REPO IS INTENDED AS A REPRODUCIBLE PAPER EXPERIMENT AND HENCE HAS MORE EXTRA INSTRUCTIONS FOR SET UP THAN THE ORIGINAL REPO
-## REPRODUCE THIS REPO IN TROVI VIA THIS LINK: 
-## ORIGINAL REPO LINK: 
-# GlueTest: Testing Code Translation via Language Interoperability
-
 This is an artifact for the paper, "GlueTest: Testing Code Translation via Language Interoperability" presented at ICSME 2024 NIER. It contains the following directories: 
 
 1. `commons-cli` and `commons-csv`: original Commons CLI and CSV source code and tests
