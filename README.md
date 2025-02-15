@@ -16,13 +16,16 @@ This is an artifact for the paper, "GlueTest: Testing Code Translation via Langu
 4. `graal-glue-generator`: contains the source code for the glue code generator
 5. `scripts`: contains scripts run local coverage, coverage through CI, collecting clients, and generating glue code.
 
-## Set up Trovi Project
+## Set up Trovi Project (if using trovi) :
+
+cd into correct working directory
 
 Deactivate default conda trovi environment
 ```bash
 conda deactivate
 ```
-Move to `work/[current_session]` folder inside Chameleon Trovi and update apt and install zip afterwards
+
+Update apt and install zip afterwards
 ```bash
 sudo apt update
 sudp apt install zip
