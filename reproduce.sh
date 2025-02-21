@@ -25,7 +25,6 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 17.0.7-graal
 gu install python
-pip install pyhamcrest==2.1.0
 
 # Run test
 sdk install maven
@@ -34,4 +33,5 @@ mamba init
 source ~/.bashrc
 mamba activate gluetest
 mamba install pytest
+pip install pyhamcrest==2.1.0
 bash gluetest/run.sh
