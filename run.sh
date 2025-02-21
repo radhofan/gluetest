@@ -2,16 +2,16 @@
 
 echo "Running tests for commons-cli and commons-cli-graal..."
 
-mvn -f commons-cli/pom.xml test -Drat.skip || echo "Tests for the original commons-cli failed! Please ensure your environment is set up correctly and try again."
+mvn -f gluetest/commons-cli/pom.xml test -Drat.skip || echo "Tests for the original commons-cli failed! Please ensure your environment is set up correctly and try again."
 original_tests=$?
 
-mvn -f commons-cli-graal/pom.xml test -Drat.skip || echo "Tests for the GraalVM version of commons-cli failed! Please ensure your environment is set up correctly and try again."
+mvn -f gluetest/commons-cli-graal/pom.xml test -Drat.skip || echo "Tests for the GraalVM version of commons-cli failed! Please ensure your environment is set up correctly and try again."
 glue_code_tests=$?
 
-mvn -f commons-csv/pom.xml test -Drat.skip || echo "Tests for commons-csv failed! Please ensure your environment is set up correctly and try again."
+mvn -f gluetest/commons-csv/pom.xml test -Drat.skip || echo "Tests for commons-csv failed! Please ensure your environment is set up correctly and try again."
 csv_tests=$?
 
-mvn -f commons-csv-graal/pom.xml test -Drat.skip || echo "Tests for the GraalVM version of commons-csv failed! Please ensure your environment is set up correctly and try again."
+mvn -f gluetest/commons-csv-graal/pom.xml test -Drat.skip || echo "Tests for the GraalVM version of commons-csv failed! Please ensure your environment is set up correctly and try again."
 csv_graal_tests=$?
 
 # check python version greater than 3.10, print version if true
@@ -27,10 +27,10 @@ pytest_installed=$?
 
 if [ $python_installed -eq 0 ] && [ $pytest_installed -eq 0 ]; then
     echo "Running tests for commons-cli-python..." 
-    python3 -m pytest commons-cli-python
+    python3 -m pytest gluetest/commons-cli-python
 
     echo "Running tests for commons-csv-python..."
-    python3 -m pytest commons-csv-python
+    python3 -m pytest gluetest/commons-csv-python
 fi
 
 # print success message if all tests passed
