@@ -17,7 +17,8 @@ source ~/.bashrc  # Reload shell config
 eval "$(mamba shell hook --shell=bash)"
 
 # Install zip
-sudo apt install zip
+sudo apt install zip -y
+sudo apt install unzip -y
 
 # Setting up graalvm and python 
 curl -s "https://get.sdkman.io" | bash

@@ -26,7 +26,7 @@ conda deactivate
 Update apt and install zip afterwards
 ```bash
 sudo apt update
-sudp apt install zip
+sudo apt install zip
 ```
 
 ## Setting up GraalVM and GraalPython
