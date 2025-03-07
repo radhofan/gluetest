@@ -1,8 +1,8 @@
 import os
 import re
 
-print("WARNING: This script is desctructive. Please make sure that you stage all changes in the repository before running this, and discard any new changes after the script terminates and you record the coverage.")
-input("Press Enter to continue...")
+# print("WARNING: This script is desctructive. Please make sure that you stage all changes in the repository before running this, and discard any new changes after the script terminates and you record the coverage.")
+# input("Press Enter to continue...")
 
 def remove_comments(code):
     # Remove all sequences of triple quotes from the code
@@ -16,7 +16,7 @@ def remove_comments(code):
 
     return code, len(lines)
 
-python_path = "./../commons-cli-translated/src/main/python"
+python_path = "gluetest/commons-cli-translated/src/main/python"
 
 # get list of all files in directory {python_path}
 files = [f for f in os.listdir(python_path) if f.endswith('.py')]
