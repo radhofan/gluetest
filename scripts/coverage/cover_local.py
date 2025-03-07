@@ -38,7 +38,7 @@ for file in files:
     content = f"""
 import sys
 def trace_calls(frame, event, arg):
-    with open('trace.txt', 'a') as f:
+    with open('gluetest/scripts/coverage/trace.txt', 'a') as f:
         f.write(f"{{frame.f_code.co_filename.split('/')[-1].split('.')[0]}}: {{frame.f_lineno}}\\n")
     return trace_calls
 sys.settrace(trace_calls)
