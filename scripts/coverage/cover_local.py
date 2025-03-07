@@ -53,7 +53,7 @@ sys.settrace(trace_calls)
 
 os.system('mvn test -Drat.skip > /dev/null 2>&1')
 
-with open('trace.txt') as f:
+with open('gluetest/scripts/coverage/trace.txt') as f:
     lines = f.readlines()
 
 loc = {}
