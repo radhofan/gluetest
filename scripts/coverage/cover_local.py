@@ -16,7 +16,7 @@ def remove_comments(code):
 
     return code, len(lines)
 
-python_path = "gluetest/commons-csv-graal/src/main/python"
+python_path = "gluetest/commons-csv-python/src/main/python"
 
 # get list of all files in directory {python_path}
 files = [f for f in os.listdir(python_path) if f.endswith('.py')]
