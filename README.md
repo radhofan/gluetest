@@ -1,7 +1,7 @@
 ### NOTE: THIS REPOSITORY IS A REPRODUCIBLE PAPER EXPERIMENT AND IS INTENDED TO BE RAN INSIDE CHAMELEON TROVI
 #### Reproduce this experiment via reproduce.ipynb
 #### This experiment has been modified to ensure perfect replication
-#### Reproduce this repository in Chameleon Trovi here: 
+#### Reproduce this repository in Chameleon Trovi here: https://www.chameleoncloud.org/experiment/share/bd4315ed-ed4d-48b0-afb7-b1b2237d68f0
 #### Original repository link: https://github.com/seal-research/gluetest
 
 # GlueTest: Testing Code Translation via Language Interoperability
